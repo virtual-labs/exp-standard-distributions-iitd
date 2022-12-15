@@ -222,23 +222,6 @@ function outputProbability(){
 	}
 }
 
-function outputCumulativeProbability(){
-	const choice = select.options[select.selectedIndex].value;
-
-	try{
-		const [p1, p2] = validate(choice);
-		let x = document.getElementById('x').value;
-
-		if(isNaN(x)){
-			throw ("Please enter a number.");
-		}
-
-		document.getElementById('pr').value = (x == ""? "": cDist.get(choice)(parseFloat(x), p1, p2).toFixed(6));
-	}catch(e){
-		alert(e);
-	}
-}
-
 function outputRangeProbability(){
 	const choice = select.options[select.selectedIndex].value;
 
