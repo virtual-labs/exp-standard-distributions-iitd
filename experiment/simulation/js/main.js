@@ -150,6 +150,7 @@ function change(){
 	const elements = document.getElementsByClassName('hidden');
 	while(elements.length > 0) {elements[0].classList.remove('hidden');}
 
+	// Labels of parameters
 	const p1l = document.getElementById('p1l');
 	const p1 = document.getElementById('p1');
 
@@ -170,7 +171,7 @@ function change(){
 
 	MathJax.typeset([p1l, p2l]);
 
-	//Probability at point or range
+	// Probability at point or range
 	const prl = document.getElementById('prl');
 	prl.innerHTML = (disc.includes(choice)? '\\(P(X = x) = \\)': '\\(f(x) = \\)');
 	MathJax.typeset([prl]);
