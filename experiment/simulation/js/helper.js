@@ -21,35 +21,6 @@ const layout = {
 	margin: {t: 50}
 };
 
-const attributes = {
-	axis: true,
-	boundingbox: [-5, 1.1, -0.1, 5],
-	showcopyright: false,
-	pan: {
-		needShift: false
-	},
-	defaultAxes: {
-		x: {
-			name: "\\(x\\)",
-			withLabel: true,
-			label: {
-				position: 'rt',
-				offset: [-10, 10],
-				useMathJax: true
-			}
-		},
-		y: {
-			name: "\\(P(X\\leq x)\\)",
-			withLabel: true,
-			label: {
-				position: 'rt',
-				offset: [10, -20],
-				useMathJax: true
-			}
-		}
-	}
-};
-
 //Useful constants
 const MINP = 0.00001;							//Minimum probability shown
 const MAXP = 0.99999;							//Maximum probability shown
@@ -338,59 +309,6 @@ const Dist = new Map([
 	}]
 ]);
 
-const cDist = new Map([
-	['und', function uniformd_cdf(k, l=0, r=4){
-		return Math.max(0, Math.min((Math.floor(k) - l + 1)/(r - l + 1), 1));
-	}],
-	
-	['geo', function geometric_cdf(k, p=0.5, p2=0){
-		if(k < 0){return 0;}
-		return (1 - Math.pow(p, Math.floor(k)+1));
-	}],
-
-	['bin', function binomial_cdf(k, p=0.5, n=6){
-		return jStat.binomial.cdf(k, n, p);
-	}],
-	
-	['poi', function poisson_cdf(k, l=2, p2=0){
-		return jStat.poisson.cdf(k, l);
-	}],
-	
-	['unc', function uniformc_cdf(x, l=0, r=4){
-		return Math.max(0, Math.min((x - l)/(r - l), 1));
-	}],
-	
-	['exp', function exponential_cdf(x, l=0.5, p2=0){
-		if(x < 0) {return 0}
-		return 1 - Math.exp(-l*x);
-	}],
-
-	['nor', function normal_cdf(x, u=0, s=1){
-		return jStat.normal.cdf(x, u, s);
-	}],
-
-	['gam', function gamma_cdf(x, a=2, b=1){
-		if(x < 0) {return 0}
-		return jStat.gamma.cdf(x, a, 1/b);
-	}],
-
-	['erl', function erlang_cdf(x, k=2, l=0.5){
-		return cDist.get('gam')(x, k, l);
-	}],
-
-	['bet', function beta_cdf(x, a=2, b=1){
-		return jStat.beta.cdf(x, a, b);
-	}],
-
-	['chi', function chi_squared_cdf(x, k=2, p2=0){
-		return cDist.get('gam')(x, k/2, 0.5);
-	}],
-
-	['stu', function students_t_cdf(x, v=1, p2=0){
-		return jStat.studentt.cdf(x, v);
-	}]
-]);
-
 const Rand = new Map([
 	['und', function uniformd_rand(l=0, r=4){
 		return l + Math.floor((r - l + 1)*Math.random());
@@ -513,67 +431,4 @@ const proFunc = new Map([
 
 	['stu', `f(x) = 
 		\\dfrac{\\Gamma\\left(\\frac{\\nu+1}{2}\\right)}{\\sqrt{\\nu\\pi}\\ \\Gamma(\\frac{\\nu}{2})}\\left(1 + \\dfrac{x^2}{\\nu}\\right)^{-(v+1)/2}`]
-]);
-
-const cumFunc = new Map([
-	['und', `P(X \\leq x) = 
-		\\begin{cases}
-			0 & x < a \\\\
-			\\frac{\\lfloor x \\rfloor - a + 1}{b - a + 1} & a \\leq x < b \\\\
-			1 & b \\leq x
-		\\end{cases}`],
-	
-	['geo', `P(X \\leq x) = 
-		\\begin{cases}
-			0 & x < 0 \\\\
-			1 - p^{\\lfloor x \\rfloor +1} & x \\geq 0
-		\\end{cases}`],
-	
-	['bin', `P(X \\leq x) = \\sum_{r = 0}^{r=x} \\binom{n}{r} \\cdot p^r \\cdot (1 - p)^{n-r}`],
-	
-	['poi', `P(X \\leq x) = \\sum_{r = 0}^{r=x}  e^{-\\lambda}\\cdot\\dfrac{\\lambda^r}{r!}`],
-	
-	['unc', `P(X \\leq x) = 
-		\\begin{cases}
-			0 & x < a \\\\
-			\\dfrac{x}{b - a} & x \\in [a, b] \\\\ 
-			1 & x > b
-		\\end{cases}`],
-	
-	['exp', `P(X \\leq x) = 
-		\\begin{cases}
-			0 & x < 0 \\\\
-			1 - e^{-\\lambda x} & x \\geq 0
-		\\end{cases}`],
-	
-	['nor', `P(X \\leq x) = 
-		\\int_{-\\infty}^{x} \\dfrac{1}{\\sigma\\sqrt{2\\pi}}\\cdot e^{-\\frac{1}{2}\\left(\\frac{t-\\mu}{\\sigma}\\right)^2} dt`],
-	
-	['gam', `P(X \\leq x) = 
-		\\begin{cases}
-			0 & x < 0 \\\\
-			\\displaystyle \\int_{0}^{x} \\dfrac{t^{\\alpha-1}e^{-\\beta t}\\beta^\\alpha}{\\Gamma(\\alpha)} dt & x \\geq 0
-		\\end{cases}`],
-
-	['erl', `P(X \\leq x) = 
-		\\begin{cases}
-			0 & x < 0 \\\\
-			\\displaystyle \\int_{0}^{x} \\dfrac{t^{k-1}e^{-\\beta t}\\beta^k}{\\Gamma(k)} dt & x \\geq 0
-		\\end{cases}`],
-	
-	['bet', `P(X \\leq x) = 
-		\\begin{cases}
-			0 & x < 0 \\\\
-			\\displaystyle \\int_{0}^{x} \\dfrac{t^{\\alpha-1}(1-t)^{\\beta-1}}{B(\\alpha, \\beta)} dt & x \\in [0, 1] \\\\
-			1 & x > 1
-		\\end{cases}`],
-
-	['chi', `P(X \\leq x) = 
-		\\begin{cases}
-			0 & x < 0 \\\\
-			\\displaystyle \\int \\dfrac{x^{k/2 - 1}e^{-x/2}}{2^{k/2}\\cdot\\Gamma(k/2)} & x \\geq 0
-		\\end{cases}`],
-
-	['stu', `P(X \\leq x) = 
-		\\int_{-\\infty}^{x} \\dfrac{\\Gamma\\left((\\nu+1)/2\\right)}{\\sqrt{\\nu\\pi}\\ \\Gamma(\\nu/2)}\\left(1 + \\dfrac{t^2}{\\nu}\\right)^{-(v+1)/2} dt`]
 ]);
