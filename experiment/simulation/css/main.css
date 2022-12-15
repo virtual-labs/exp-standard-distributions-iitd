@@ -1,1 +1,166 @@
-/* You CSS goes in here */
+/*@font-face { font-family: Roboto; src: url('fonts/Roboto-Regular.ttf'); font-weight:normal;}*/
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:400);*/
+
+body {
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 960px;
+	margin: auto;
+}
+
+/* INPUT ELEMENTS */
+input {
+	border: 1px solid rgb(150, 150, 150);
+	border-radius: 2px;
+	padding: 6px;
+	background-color: rgb(240, 240, 240);
+	margin: 2px 0px 0 0;
+	width: 70px;
+}
+
+input:disabled {
+	background-color: #e7b0b0;
+	color: rgb(0, 0, 0);
+}
+
+input[type="button"]:hover {
+	background-color: rgb(210, 210, 210);
+}
+
+input[type="text"]{
+	text-align: right;
+}
+
+select {
+	margin: 2px 0px 8px 0;
+	height: 28px;
+}
+
+.home {
+	float: right;
+}
+
+/* HIDDING */
+.hidden {
+	visibility: hidden;
+}
+
+/* TABLE */
+table {
+	text-align: right;
+	margin: auto auto auto 19%;
+	table-layout: fixed;
+	width: 56%;
+}
+
+td.input {
+	text-align: left;
+}
+
+col.input {
+	width: 120px;
+}
+
+h3 {
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+	padding: 8px;
+	text-align: center;
+	background-color: rgb(235, 235, 235);
+	border: solid 1px rgb(200, 200, 200);
+	border-radius: 3px;
+	position: relative;
+	margin: 0px 0px 10px 0px;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+}
+
+#graph:not(:empty) {
+	border: solid black 2px;
+}
+
+div#function {
+	text-align: center;
+	height: 132px;
+	line-height: 132px;
+}
+
+span#func {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+.jxgbox:empty {
+	background-color: transparent;
+	display: none;
+	border: none;
+}
+
+/**/
+p.mathjaxText {
+	font-size: 100%;
+	text-align: left;
+}
+
+p {
+	color: black;
+}
+
+p.small {
+	font-size: 70%;
+	font-family: sans-serif;
+	color: grey;
+	padding: 0px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.mathjaxMoments {
+	font-size: 90%;
+	font-family: sans-serif;
+	margin: auto;
+	text-align: center;
+	color: rgb(120, 120, 120);
+	padding: 15px;
+}
+
+p.mathjaxCenter {
+	font-size: 90%;
+	font-family: courier;
+	margin-bottom: 0px;
+	text-align: center;
+	color: rgb(120, 120, 120);
+}
+
+p.mathjaxCI {
+	font-size: 90%;
+	font-family: courier;
+	text-align: center;
+	color: rgb(120, 120, 120);
+}
+
+footer {
+	background-color: rgb(235, 235, 235);
+	border: solid 1px rgb(200, 200, 200);
+	border-radius: 3px;
+	display: block;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+}
+
+#footerleft {
+	float: left;
+	padding: 5px;
+}
+
+#footerright {
+	text-align: right;
+	padding-right: 5px;
+}
+
+ul {
+	margin-top: -5px;
+}
+
+li {
+	margin-bottom: 3px;
+}

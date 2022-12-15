@@ -1,13 +1,95 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+<html lang="en">
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<head id="std">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.1/math.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
+	<script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+	<title>Standard Distributions</title>
+</head>
+
+<body>
+	<!-- <h3>Standard Distributions</h3> -->
+
+	<form id = "info" autocomplete="off">
+		<label for="distribution">Choose a distribution:</label>
+		<select id="distribution" onchange="change()">
+			<option value="" disabled selected> -- Select a distribution -- </option>
+			<optgroup label="Discrete">
+				<option value="und">Uniform - Discrete	</option>
+				<option value="geo">Geometric			</option>
+				<option value="bin">Binomial			</option>
+				<option value="poi">Poisson				</option>
+			</optgroup>
+			<optgroup label="Continuous">
+				<option value="unc">Uniform - Continuous</option>
+				<option value="exp">Exponential			</option>
+				<option value="nor">Normal				</option>
+				<option value="gam">Gamma				</option>
+				<option value="erl">Erlang				</option>
+				<option value="bet">Beta				</option>
+				<option value="chi">Chi-Squared			</option>
+				<option value="stu">Student's t			</option>
+			</optgroup>
+		</select>
+
+		<input class="hidden" type="button" value="Go" onclick="PDF()">
+		<a href="../index.html"><input type="button" class="home" value="Back"></a>
+		<br>
+
+		<div id="function">
+			<span id="func"></span>
+		</div>
+
+		<table class="hidden">
+			<colgroup>
+				<col> <col class="input">
+				<col> <col class="input">
+			</colgroup>
+			<tr>
+				<td><label for="p1" id="p1l"></label></td>
+				<td class="input"><input type="text" id="p1"></td>
+
+				<td><label for="p2" id="p2l"></label></td>
+				<td class="input"><input type="text" id="p2"></td>
+			</tr>
+			<tr>
+				<td><label for="x" id="xl">\(x = \)</label></td>
+				<td class="input"><input type="text" id="x" oninput="outputProbability()"></td>
+
+				<td><label for="pr" id="prl"></label></td>
+				<td class="input"><input disabled type="text" id="pr"></td>
+			</tr>
+			<tr>
+				<td colspan=3>
+					\( P \Big( \)
+					<input type="text" id="minx" oninput="outputRangeProbability()"> 
+					\( &lt X \leq \)
+					<input type="text" id="maxx" oninput="outputRangeProbability()">
+					\( \Big) = \)
+				</td>
+				<td class="input"> <input disabled type="text" id="rpr"></td>
+			</tr>
+		</table><br>
+
+		<input class="hidden" type="checkbox" id="theo" value="theo" checked>
+		<label class="hidden" for="theo">Theoretical</label><br>
+		<input class="hidden" type="checkbox" id="rand" value="rand">
+		<label class="hidden" for="rand">Randomized</label><br>
+	</form>
+
+	<div class="mathjaxMoments hidden" id="moments" ></div>
+
+	<div id="graph"></div>
+
+	<script src="../js/global_constants.js"></script>
+	<script src="../js/graphs.js"></script>
 </body>
+
 </html>
