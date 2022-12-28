@@ -2,12 +2,29 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "For a Poisson variate X, P(X = 1) = P(X = 2). The variance of X is:?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The American Red Cross says that about 11% of the U.S. population has Type B blood. A blood drive is being held at your school.What is the probability that exactly 2 of the first 20 blood donors have Type B blood?",
+      "answers": {
+        "a": "0.282",
+        "b": "0.316",
+        "c": "0.4",
+        "d": "0.01"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -16,23 +33,6 @@
         "d": "Explanation 2"
       },
       "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
       "difficulty": "beginner"
     }
   ]
