@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "At a local high school, GPA's are normally distributed with a mean of 2.9 and standard deviation of 0.6. What percentage of students at the high school have a GPA between 2.3 and 3.5?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "68%",
+        "b": "90%",
+        "c": "97%",
+        "d": "40%"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -19,12 +19,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "A mobile conversation follows a exponential distribution f (x) = (1/3)e-x/3. What is the probability that the conversation takes more than 5 minutes is?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "0",
+        "b": "$e^{-\frac{2}{3}}",
+        "c": "$e^{-\frac{5}{3}}$",
+        "d": "$e^{-3}"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
