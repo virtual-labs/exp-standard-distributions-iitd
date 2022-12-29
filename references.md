@@ -1,0 +1,1 @@
+### Castañeda, L. B., Arunachalam, V., & Dharmaraja, S. (2012). Introduction to probability and stochastic processes with applications. John Wiley & Sons.[a link]{https://www.wiley.com/en-us/Introduction+to+Probability+and+Stochastic+Processes+with+Applications-p-9781118344972}
