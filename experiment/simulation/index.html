@@ -5,7 +5,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
 	<link rel="stylesheet" href="./css/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Exo:ital@1&display=swap" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.1/math.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
 	<script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
@@ -16,7 +22,26 @@
 
 <body>
 	<!-- <h3>Standard Distributions</h3> -->
+	<div class="form-group" style="border: 0.5px solid rgb(98, 98, 98);
+					 align-self: center;
+                     border-radius: 16px;
+                     background: #37474F;
+                     margin: 10px;
+                     padding: 30px;
+                     height: fit-content;
+                     width: 600px;
+                     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);">
 
+                <div style="
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        margin-bottom: 2em;
+                        color: aliceblue;
+                        ">
+                    <h1 style="font-family: 'Rokkitt', serif;">Standard Distributions</h1>
+                </div>
 	<form id = "info" autocomplete="off">
 		<label for="distribution">Choose a distribution:</label>
 		<select id="distribution" onchange="change()">
@@ -68,13 +93,13 @@
 			</tr>
 			<tr>
 				<td colspan=3>
-					\( P \Big( \)
+					<!--\( P \Big( \)-->
 					<input type="text" id="minx" oninput="outputRangeProbability()"> 
-					\( &lt X \leq \)
+					<!--\( &lt X \leq \)-->
 					<input type="text" id="maxx" oninput="outputRangeProbability()">
-					\( \Big) = \)
+					<!--\( \Big) = \)-->
 				</td>
-				<td class="input"> <input disabled type="text" id="rpr"></td>
+				<td class="input"> <input disabled type="text" id="rpr" ></td>
 			</tr>
 		</table><br>
 
@@ -83,7 +108,7 @@
 		<input class="hidden" type="checkbox" id="rand" value="rand">
 		<label class="hidden" for="rand">Randomized</label><br>
 	</form>
-
+	</div>
 	<div class="mathjaxMoments hidden" id="moments" ></div>
 
 	<div id="graph"></div>
