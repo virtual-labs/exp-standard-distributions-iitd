@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "For a Poisson variate X, P(X = 1) = P(X = 2). The variance of X is:?",
+      "question": "This is a Sample Question 1?",
       "answers": {
-        "a": "1",
-        "b": "2",
-        "c": "3",
-        "d": "4"
+        "a": "answer1",
+        "b": "answer2",
+        "c": "answer3",
+        "d": "answer4"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -15,39 +15,24 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "In an experiment, positive and negative values are equally likely to occur. The probability of obtaining at most one negative value in five trials is ?" {
-        "a": "1/32",
-        "b": "6/32",
-        "c": "1/5",
-        "d": "1/2"
+      "question": "This is a Sample Question 2?",
+      "answers": {
+        "a": "answer1",
+        "b": "answer2",
+        "c": "answer3",
+        "d": "answer4"
       },
       "explanations": {
-        "a": "Given: n = 5, p = 1/2 Let X represents number of negative values in 5 trials, therefore X is a binomial random variable. At most 1 negative value means, k can be 0 and 1 P(At most one negative value) = P(X≤1) -> P(X ≤ 1) = P(X = 0) + P(X = 1)= 1/32 + 5/32= 6/32.",
-        "b": "Given: n = 5, p = 1/2 Let X represents number of negative values in 5 trials, therefore X is a binomial random variable. At most 1 negative value means, k can be 0 and 1 P(At most one negative value) = P(X≤1) -> P(X ≤ 1) = P(X = 0) + P(X = 1)= 1/32 + 5/32= 6/32.",
-        "c": "Given: n = 5, p = 1/2 Let X represents number of negative values in 5 trials, therefore X is a binomial random variable. At most 1 negative value means, k can be 0 and 1 P(At most one negative value) = P(X≤1) -> P(X ≤ 1) = P(X = 0) + P(X = 1)= 1/32 + 5/32= 6/32.",
-        "d": "Given: n = 5, p = 1/2 Let X represents number of negative values in 5 trials, therefore X is a binomial random variable. At most 1 negative value means, k can be 0 and 1 P(At most one negative value) = P(X≤1) -> P(X ≤ 1) = P(X = 0) + P(X = 1)= 1/32 + 5/32= 6/32."
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
       },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
- {
-      "question": "For a given biased coin, the probability that the outcome of a toss is a head is 0.4. This coin is tossed 1,000 times. Let X denote the random variable whose value is the number of times that head appeared in these 1,000 tosses. The standard deviation of X is?" {
-        "a": "15.49",
-        "b": "18",
-        "c": "10",
-        "d": "12.4"
-      },
-      "explanations": {
-        "a": "Standard deviation= (npq)^(1/2) = (100.0.4.0.6)^(1/2)=15.49.",
-        "b": "Standard deviation= (npq)^(1/2) = (100.0.4.0.6)^(1/2)=15.49.",
-        "c": "Standard deviation= (npq)^(1/2) = (100.0.4.0.6)^(1/2)=15.49.",
-        "d": "Standard deviation= (npq)^(1/2) = (100.0.4.0.6)^(1/2)=15.49."
-      },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     }
   ]
