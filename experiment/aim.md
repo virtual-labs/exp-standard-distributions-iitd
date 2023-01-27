@@ -1,1 +1,1 @@
-### Aim of the experiment is to provide graphical visualization of standard distributions both theoretically and with random data, and to calulae the probability of an event under selected distribution.
+### Aim of the experiment is to provide graphical visualization of standard distributions both theoretically and with random data, and to calulate the probability of an event under selected distribution.
