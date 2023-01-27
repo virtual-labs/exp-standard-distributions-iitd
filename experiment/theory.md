@@ -21,3 +21,4 @@ Where
 - $\lambda$ is an average rate of the expected value and $\lambda=$ variance, also $\lambda>0$
 
 For the distribution formula of geometric, uniform, exponential, gamma, erlang, beta, chi-squared, and student's t one can refer to book mentioned in refernces.
+<img src="images/theory.png"/>
