@@ -2,38 +2,90 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Normal distribution is symmetric about?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Standard variation",
+        "b": "mean",
+        "c": "covariance",
+        "d": "variance"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Normal distribution is symmetric about mean.",
+        "b": "Normal distribution is symmetric about mean.",
+        "c": "Normal distribution is symmetric about mean.",
+        "d": "Normal distribution is symmetric about mean."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Standard normal distribution has which of the following properties?",
+      "answers": {
+        "a": "Mean=variance=1",
+        "b": "Standard deviation=variance=0",
+        "c": "Mean=0, variance=1",
+        "d": "Mean=Standard deviation"
+      },
+      "explanations": {
+        "a": "Standard normal distribution has mean=0 and variance =1.",
+        "b": "Standard normal distribution has mean=0 and variance =1.",
+        "c": "Standard normal distribution has mean=0 and variance =1.",
+        "d": "Standard normal distribution has mean=0 and variance =1."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+     {
+      "question": "A random variable P follows exponential distribution with mean value 0.5. The expectation of P^2 will be?",
+      "answers": {
+        "a": "0.50",
+        "b": "0",
+        "c": "1",
+        "d": "0.65"
+      },
+      "explanations": {
+        "a": "Variance=E(P^2)-E(P)^2, and given P follows exponential distribution there fore variance = (0.5)^2=0.25, mean = 0.5, therefor we get: 0.25=E(P^2)-(0.5)^2 which implies E(P^2)=0.5.",
+        "b": "Variance=E(P^2)-E(P)^2, and given P follows exponential distribution there fore variance = (0.5)^2=0.25, mean = 0.5, therefor we get: 0.25=E(P^2)-(0.5)^2 which implies E(P^2)=0.5.",
+        "c": "Variance=E(P^2)-E(P)^2, and given P follows exponential distribution there fore variance = (0.5)^2=0.25, mean = 0.5, therefor we get: 0.25=E(P^2)-(0.5)^2 which implies E(P^2)=0.5.",
+        "d": "Variance=E(P^2)-E(P)^2, and given P follows exponential distribution there fore variance = (0.5)^2=0.25, mean = 0.5, therefor we get: 0.25=E(P^2)-(0.5)^2 which implies E(P^2)=0.5."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The number of parameters in the exponential and binomial distributions, respectively are?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "2 and 2",
+        "b": "3 and 2",
+        "c": "1 and 1",
+        "d": "1 and 2"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The number of parameters in the exponential and binomial distributions, respectively are 1 and 2.",
+        "b": "The number of parameters in the exponential and binomial distributions, respectively are 1 and 2.",
+        "c": "The number of parameters in the exponential and binomial distributions, respectively are 1 and 2.",
+        "d": "The number of parameters in the exponential and binomial distributions, respectively are 1 and 2."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "If calls arrive at a telephone exchange such that the time of arrival of any call is independent of the time of arrival of earlier or future calls, the probability distribution function of the total number of calls in a fixed time interval will be?",
+      "answers": {
+        "a": "Poisson",
+        "b": "Normal",
+        "c": "Gamma",
+        "d": "Binomial"
+      },
+      "explanations": {
+        "a": "The number of trials is very large and the probability of success is small therefor it will follow poisson distribution.",
+        "b": "The number of trials is very large and the probability of success is small therefor it will follow poisson distribution.",
+        "c": "The number of trials is very large and the probability of success is small therefor it will follow poisson distribution.",
+        "d": "The number of trials is very large and the probability of success is small therefor it will follow poisson distribution."
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
 }
+
