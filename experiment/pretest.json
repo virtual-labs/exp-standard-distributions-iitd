@@ -68,6 +68,23 @@
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
+    },
+    {
+      "question": "If calls arrive at a telephone exchange such that the time of arrival of any call is independent of the time of arrival of earlier or future calls, the probability distribution function of the total number of calls in a fixed time interval will be?",
+      "answers": {
+        "a": "Poisson",
+        "b": "Normal",
+        "c": "Gamma",
+        "d": "Binomial"
+      },
+      "explanations": {
+        "a": "The number of trials is very large and the probability of success is small therefor it will follow poisson distribution.",
+        "b": "The number of trials is very large and the probability of success is small therefor it will follow poisson distribution.",
+        "c": "The number of trials is very large and the probability of success is small therefor it will follow poisson distribution.",
+        "d": "The number of trials is very large and the probability of success is small therefor it will follow poisson distribution."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
     }
   ]
 }
