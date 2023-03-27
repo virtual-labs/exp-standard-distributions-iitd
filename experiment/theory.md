@@ -1,1 +1,1 @@
-<img src="images/theory.PNG"/>
+<img src="images/merge_from_ofoct.jpg"/>
