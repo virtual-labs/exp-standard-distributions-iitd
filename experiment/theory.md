@@ -2,7 +2,7 @@
 <img src="images/Image 28-05-23 at 1.33 PM (1).jpeg"/>
 <img src="images/Image 28-05-23 at 1.34 PM.jpeg"/>
 <img src="images/Image 28-05-23 at 1.35 PM.jpeg"/>
-<img src="images/Bernoulli_Distribution.PNG"/>
+<img src="images/D30800B6-FC8C-4785-A1E7-6078657D33A2.jpeg"/>
 <img src="images/Image 28-05-23 at 1.35 PM (1).jpeg"/>
 <img src="images/Image 28-05-23 at 1.35 PM (2).jpeg"/>
 <img src="images/Image 28-05-23 at 1.35 PM (3).jpeg"/>
