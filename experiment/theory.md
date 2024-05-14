@@ -6,7 +6,7 @@
 <img src="images/Image 28-05-23 at 1.35 PM (1).jpeg"/>
 <img src="images/8C6DD4B1-2B16-4D45-BD61-F0E05ABC4D8C.jpeg"/>
 <img src="images/Image 28-05-23 at 1.35 PM (2).jpeg"/>
-<img src="images/HypergeometricPDF.png"/>
+<img src="images/5EFF156E-D30C-4D3B-858E-BE705A5D2D6E.jpeg"/>
 <img src="images/Image 28-05-23 at 1.35 PM (3).jpeg"/>
 <img src="images/Image 28-05-23 at 1.36 PM.jpeg"/>
 <img src="images/Image 28-05-23 at 1.36 PM (1).jpeg"/>
