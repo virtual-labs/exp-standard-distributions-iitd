@@ -11,7 +11,6 @@
 <img src="images/Image 28-05-23 at 1.36 PM.jpeg"/>
 <img src="images/Image 28-05-23 at 1.36 PM (1).jpeg"/>
 <img src="images/Image 28-05-23 at 1.36 PM (2).jpeg"/>
-<img src="images/Image 28-05-23 at 2.36 PM.jpeg"/>
 <img src="images/Image 28-05-23 at 2.38 PM.jpeg"/>
 <img src="images/Image 28-05-23 at 2.39 PM.jpeg"/>
 <img src="images/Image 28-05-23 at 2.41 PM.jpeg"/>
