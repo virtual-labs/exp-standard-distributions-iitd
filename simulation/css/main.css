@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital@1&display=swap');
+
+body {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	font-size: 100%;
+	background-color: rgba(230, 230, 240, 0.8);
+	font-family: Arial, Helvetica, sans-serif;
+	width: 960px;
+	margin: auto;
+}
+
+/* INPUT ELEMENTS */
+label {
+	font-size: large;
+    color: #ddd;
+    font-family: 'Exo', sans-serif;
+}
+
+input {
+	font-size: medium;
+	border: 1px solid rgb(150, 150, 150);
+	border-radius: 2px;
+	padding: 5px;
+	background-color: rgb(240, 240, 240);
+	margin: 2px 0px 0 0;
+	width: 70px;
+}
+
+input:disabled {
+	background-color: #e7b0b0;
+	color: rgb(0, 0, 0);
+}
+
+input[type="button"]:hover {
+	background-color: rgb(210, 210, 210);
+}
+
+input[type="text"]{
+	text-align: right;
+	color: black;
+}
+input[id="minx"]{
+	display: none;
+}
+input[id="maxx"]{
+	display: none;
+}
+input[id="rpr"]{
+	border: #37474F;
+	background-color: #37474F;
+}
+select {
+	font-size: small;
+	margin: 2px 0px 8px 0;
+	height: 28px;
+}
+
+.home {
+	float: right;
+}
+
+/* HIDDING */
+.hidden {
+	visibility: hidden;
+}
+
+/* TABLE */
+table {
+	color: #ddd;
+	align-self: center;
+	text-align: right;
+	margin: auto auto auto auto;
+	table-layout: fixed;
+	width: 90%;
+}
+
+
+td.input {
+	color: black;
+	text-align: left;
+}
+
+col.input {
+	width: 120px;
+}
+
+/* GRAPH */
+#graph:not(:empty) {
+	border: solid black 2px;
+	background-color: rgba(254, 254, 254, 0.5);
+}
+
+.jxgbox:empty {
+	background-color: transparent;
+	display: none;
+	border: none;
+}
+
+/* FUNCTION */
+div#function {
+	text-align: center;
+	font-size: large;
+	color: #ddd;
+	height: 132px;
+	line-height: 132px;
+}
+
+span#func {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+/* MOMENTS */
+.mathjaxMoments {
+	font-size: medium;
+	font-family: sans-serif;
+	margin: auto;
+	text-align: center;
+	color: rgb(120, 120, 120);
+	padding: 15px;
+}
