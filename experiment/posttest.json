@@ -2,37 +2,88 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "At a local high school, GPA's are normally distributed with a mean of 2.9 and standard deviation of 0.6. What percentage of students at the high school have a GPA between 2.3 and 3.5?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "68%",
+        "b": "90%",
+        "c": "97%",
+        "d": "40%"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Let X denote the GPA, therefore P(X in (2.3,3.5))=P(X in (-1,1))=phi(1)-phi(-1)=0.6826=68%.",
+        "b": "Let X denote the GPA, therefore P(X in (2.3,3.5))=P(X in (-1,1))=phi(1)-phi(-1)=0.6826=68%.",
+        "c": "Let X denote the GPA, therefore P(X in (2.3,3.5))=P(X in (-1,1))=phi(1)-phi(-1)=0.6826=68%.",
+        "d": "Let X denote the GPA, therefore P(X in (2.3,3.5))=P(X in (-1,1))=phi(1)-phi(-1)=0.6826=68%."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "A mobile conversation follows a exponential distribution f (x) = (1/3)e-x/3. What is the probability that the conversation takes more than 5 minutes is?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "0",
+        "b": "e^(-2/3)",
+        "c": "e^(-5/3)",
+        "d": "e^{-3}"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "f(x) = (1/3)e^(-x/3). The call should last more than 5 minutes so integrating from 5 till infinity we get the required probability = e^(-5/3).",
+        "b": "f(x) = (1/3)e^(-x/3). The call should last more than 5 minutes so integrating from 5 till infinity we get the required probability = e^(-5/3).",
+        "c": "f(x) = (1/3)e^(-x/3). The call should last more than 5 minutes so integrating from 5 till infinity we get the required probability = e^(-5/3).",
+        "d": "f(x) = (1/3)e^(-x/3). The call should last more than 5 minutes so integrating from 5 till infinity we get the required probability = e^(-5/3)."
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+     {
+      "question": "Consider a set of 18 samples from a standard normal distribution. We square each sample and sum all the squares. The number of degrees of freedom for a Chi Square distribution will be?",
+      "answers": {
+        "a": "17",
+        "b": "18",
+        "c": "19",
+        "d": "20"
+      },
+      "explanations": {
+        "a": "In Chi Square Distribution the number of standard normal derivatives or samples equals the number of degrees of freedom. Here total number of standard normal derivatives = 18. Hence the number of degrees of freedom for a Chi Square distribution = 18.",
+        "b": "In Chi Square Distribution the number of standard normal derivatives or samples equals the number of degrees of freedom. Here total number of standard normal derivatives = 18. Hence the number of degrees of freedom for a Chi Square distribution = 18.",
+        "c": "In Chi Square Distribution the number of standard normal derivatives or samples equals the number of degrees of freedom. Here total number of standard normal derivatives = 18. Hence the number of degrees of freedom for a Chi Square distribution = 18.",
+        "d": "In Chi Square Distribution the number of standard normal derivatives or samples equals the number of degrees of freedom. Here total number of standard normal derivatives = 18. Hence the number of degrees of freedom for a Chi Square distribution = 18."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+     {
+      "question": " The mean and the variance for gamma distribution are?",
+      "answers": {
+        "a": "E(X) = 1/λ, Var(X) = α/λ^2",
+        "b": "E(X) = a/λ, Var(X) = 1/λ^2",
+        "c": "E(X) = a/λ, Var(X) = α/λ^2",
+        "d": "E(X) = aλ, Var(X) = αλ^2"
+      },
+      "explanations": {
+        "a": "The mean and the variance for gamma distribution is given as E(X) = α/λ, Var(X) = a/λ^2.",
+        "b": "The mean and the variance for gamma distribution is given as E(X) = α/λ, Var(X) = a/λ^2.",
+        "c": "The mean and the variance for gamma distribution is given as E(X) = α/λ, Var(X) = a/λ^2.",
+        "d": "The mean and the variance for gamma distribution is given as E(X) = α/λ, Var(X) = a/λ^2."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Consider selecting 6 cards from a pack of cards without replacement. What is the probability that 3 of the cards will be black?",
+      "answers": {
+        "a": "0.3320",
+        "b": "0.4521",
+        "c": "0.6350",
+        "d": "0.3582"
+      },
+      "explanations": {
+        "a": " The given Experiment follows Hypergeometric distribution with N = 52 since there are 52 cards in a deck, k = 26 since there are 26 black cards in a deck, n = 6 since we randomly select 6 cards from the deck, x = 3 since 3 of the cards we select are black. Therefore, h(3; 52, 6, 26) = 0.3320 and thus, the probability of randomly selecting 6 black cards is 0.3320.",
+        "b": "The given Experiment follows Hypergeometric distribution with N = 52 since there are 52 cards in a deck, k = 26 since there are 26 black cards in a deck, n = 6 since we randomly select 6 cards from the deck, x = 3 since 3 of the cards we select are black. Therefore, h(3; 52, 6, 26) = 0.3320 and thus, the probability of randomly selecting 6 black cards is 0.3320. ",
+        "c": "The given Experiment follows Hypergeometric distribution with N = 52 since there are 52 cards in a deck, k = 26 since there are 26 black cards in a deck, n = 6 since we randomly select 6 cards from the deck, x = 3 since 3 of the cards we select are black. Therefore, h(3; 52, 6, 26) = 0.3320 and thus, the probability of randomly selecting 6 black cards is 0.3320.",
+        "d": "The given Experiment follows Hypergeometric distribution with N = 52 since there are 52 cards in a deck, k = 26 since there are 26 black cards in a deck, n = 6 since we randomly select 6 cards from the deck, x = 3 since 3 of the cards we select are black. Therefore, h(3; 52, 6, 26) = 0.3320 and thus, the probability of randomly selecting 6 black cards is 0.3320."
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
